@@ -4,25 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-function SambutanUser(props) {
-  return <h1>Selamat Datang 1841720218 - Rizal Anhari</h1>;
+function NumberList(props) {
+  const nim = props.nim;
+  const listItems = nim.map((number) =>
+    <li key={number.toString()}>
+      {number}
+    </li>
+  );
+  return (
+    <ul>{listItems}</ul>
+  );
+
 }
 
-function SambutanTamu(props) {
-  return <h1>Mohon melakukan sign up terlebih dahulu.</h1>;
-}
-
-function Sambutan(props) {
-  const isLoggedIn = props.isLoggedIn;
-  if (isLoggedIn) {
-    return <SambutanUser />;
-  }
-  return <SambutanTamu />;
-}
-
+const nim = [1, 8, 4, 7, 2, 0]; // <-- Ubah sesuai NIM Anda
 ReactDOM.render(
-  // Silakan coba ganti nilai isLoggedIn={false}
-  <Sambutan isLoggedIn={false} />,
+  <NumberList nim={nim} />,
   document.getElementById('root')
 );
 
