@@ -10,7 +10,7 @@ import HomeImg9 from '../assets/img/gallery-item-05.jpg';
 import HomeImg10 from '../assets/img/gallery-item-06.jpg';
 import HomeImg11 from '../assets/img/gallery-item-07.jpg';
 import HomeImg12 from '../assets/img/gallery-item-08.jpg';
-import HomeAPI from '../parts/API/home'
+import HomeAPI from '../services/API/home.jsx'
 import Footer from '../parts/Footer/footer'
 
 export default function Home() {

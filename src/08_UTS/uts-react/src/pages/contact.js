@@ -34,9 +34,7 @@ export default function Contact() {
                                     </div>
 
                                     <div class="form-group mb-0">
-                                        <button type="submit" class="btn rounded-0 d-block ml-auto tm-btn-primary">
-                                            Send It Now
-                              </button>
+                                        <button type="submit" class="btn rounded-0 d-block ml-auto tm-btn-primary">Send It Now</button>
                                     </div>
                                 </form>
                             </div>
